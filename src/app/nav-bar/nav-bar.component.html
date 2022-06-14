@@ -1,1 +1,8 @@
-<p>nav-bar works!</p>
+<div *ngIf="navBarItems.length">
+  <div *ngFor="let item of navBarItems">
+     <div>{{ item.name }}</div>
+  </div>
+</div>
+<p *ngIf="!navBarItems.length">
+  No Navigation Items
+</p>

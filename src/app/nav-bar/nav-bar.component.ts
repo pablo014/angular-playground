@@ -7,6 +7,8 @@ import { NavBarItem } from './NavBar'
 })
 export class NavBarComponent implements OnInit {
 
+  @Input() navBarItems: NavBarItem[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
